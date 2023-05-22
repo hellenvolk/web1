@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="webdev course, task 1">
+        <title>
+            Завдання 1.
+        </title>
+    </head>
+    <body>
+        <h1>
+            Форма для додавання викладача
+        </h1>
+        <form>
+            <fieldset>
+                <legend>Обов'язкові поля</legend>
+                <section>
+                    <label for="fname">Повне ім'я</label>
+                    <input type="text" name="fname" required>
+                </section>
+
+                <section>
+                    <label for="gender">Стать</label>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Чоловіча</label> 
+                    <input type="radio" name="gender" id="female" value="female">
+                    <label for="female">Жіноча</label>
+                    <input type="radio" name="gender" id="else" value="else">
+                    <label for="else">Інше</label>
+                </section>
+
+                <section>
+                    <label for="date">Дата народження</label>
+                    <input type="date" required>
+                </section>
+
+                <section>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" required>
+                </section>
+
+                <section>
+                    <label for="number">Телефон</label>
+                    <input type="tel" name="number" required>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Додатково</legend>
+                <section>
+                    <label for="color">Бажаний колір фону</label>
+                    <input type="color" name="color">
+                </section>
+
+                <section>
+                    <label for="country">Країна</label>
+                    <input type="text" name="country">
+                </section>
+
+                <section>
+                    <label for="city">Місто</label>
+                    <input type="text" name="city">
+                </section>
+
+                <section>
+                    <label for="comment">Коментар</label>
+                    <br>
+                    <textarea name="comment" rows="5" cols="70">Тут Ви можете залишити коментар</textarea>
+                </section>
+
+                <input type="submit" value="додати">
+            </fieldset>
+        </form>
+    </body>
+</html>
